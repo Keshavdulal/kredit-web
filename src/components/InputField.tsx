@@ -27,6 +27,7 @@ const InputField: React.FC<InputFieldProps> = ({
                 {...field}
                 {...props}
                 id={field.name}
+                className={field.name}
                 placeholder={props.placeholder}
             />
             {error && <FormErrorMessage>{error}</FormErrorMessage>}
